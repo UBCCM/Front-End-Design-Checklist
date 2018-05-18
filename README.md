@@ -1,11 +1,16 @@
 ![Front-End Design Checklist](/images/front-end-design-checklist-banner.jpg)
-<h2 align="center">Front-End Design Checklist</h2>
+<h2 align="center">UBC Front-End Design Checklist</h2>
 
-<p align="center">
-  <em> The Design Checklist for Front-End Developers is an exhaustive list of elements which can help developers to analyse and understand web designs and ensure the quality of their Front-End development.</em>
+<p align="left">
+  <em> The UBC Design Checklist for Front-End Developers is an exhaustive list of elements which can help developers to analyse and understand web designs and ensure the quality of their Front-End development.</em>
 </p>
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) [![Join the chat at https://gitter.im/Front-End-Checklist/Front-End-Design-Checklist](https://badges.gitter.im/Front-End-Checklist/Front-End-Design-Checklist.svg)](https://gitter.im/Front-End-Checklist/Front-End-Design-Checklist) [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+
+> The **Design Checklist for Front-End Developers** is an exhaustive list of elements which Web Designers and Front-End Developers need to take into consideration to facilitate their collaboration. The following elements are a mix between known practices and new elements based on a long experience analysing web designs. This checklist has been revised to include UBC specific materials.
+
+> **UBC CLF:** UBC's websites are guided by the UBC Common Look and Feel (CLF). Remember to visit the [CLF website](https://clf.ubc.ca) while building your site to ensure your site follows the guidelines. The website is a wealth of knowledge, so if you're ever stuck, you can likely find the answer to your question there.
 
 ## Table of Contents
 * **[1. Design requirements](#1---design-requirements)**
@@ -27,16 +32,10 @@
 
 ---
 
-> The **Design Checklist for Front-End Developers** is an exhaustive list of elements which Web Designers and Front-End Developers need to take into consideration to facilitate their collaboration. The following elements are a mix between known practices and new elements based on a long experience analysing web designs.
 
 In case you are looking for a list of all elements you need to have/to test before launching your site/HTML page to production, take a look on the → [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist).
 
 
-## How to use the Design Checklist?
-
-When comes the moment where developers discover new web designs, before converting them to code, some important elements may be missing. The Front-End Design Checklist is a tool for Front-End developers and Web Designers which aim to help both to work in a seamlessly way.
-
-You can share that checklist to Web Designers to ensure time will be saved at the delivery time or you can use it to review all elements delivered by the creative team and ensure everything is correct before digging into the code integration.
 
 
 ## Why you need to use the Design Checklist?
@@ -49,16 +48,18 @@ You can share that checklist to Web Designers to ensure time will be saved at th
 
 ---
 
-## 1. - Design requirements
+## 1. - Design Requirements
 
-Designing a website or a webapp requires following some rules and taking into consideration that the project is not only a graphic project but a web project too. The next sections are crucial for any web project.
+Designing a website or a webapp requires following some rules. Remember that the project is not only a design project, but a web project too. The next sections are crucial for any web project.
 
 ### 1.1 - Grid system
 
 ![Grid system](/images/grid-system.png)
 
-* [ ] A **grid** is explicitly provided in the design, and the details of the grid are present in the technical specification (width, gutters, number of columns…). The Web Designer can keep the grid in a transparent layer and use it on all his project.
-	> ℹ️ [Guide Guide][6] is a plugin for Photoshop that can help you easily build your grid.
+* [ ] A **grid** should be explicitly provided in the design, and the details of the grid should be present in the technical specification (width, gutters, number of columns…). 
+	> ℹ️ [UBC's CLF has grid specifications](https://clf.ubc.ca/design-specifications/). Use these specifications in all UBC projects. Designers may want to download an [Illustrator template](http://assets.brand.ubc.ca/downloads/ubc_clf7_full_width_templates_package.zip) of the CLF, which includes a transparent layer that shows the grid.
+
+  > ℹ️ [Guide Guide][6] is a plugin for Photoshop that can help you easily build your grid if you prefer to work in Photoshop.
 
 	> ℹ️ On Sketch, you can use the integrated “[Make Grid Tool][7]” to design your desired grid.
 
@@ -81,7 +82,7 @@ Designing a website or a webapp requires following some rules and taking into co
 </div>
 ```
 
-⚠️ *If you want to ensure that the grid and the width of the devices are respected, you may want to generate yourself a PSD template and that you will send it to the Web Designer.*
+
 
 __Additional Resources:__
 
@@ -95,13 +96,11 @@ __Additional Resources:__
 
 ![Colors](/images/colors.png)
 
-* [ ] **All colors used in the creatives are named** ($gray-light, $gray-dark, $green) or accordingly with their use ($body-background, $body-copy, $text-paragraph…). They can be exported in an [ACO file][11] (if use Photoshop or on a symbol page for Sketch) and shared with the developers.
+* [ ] All colors used in the design are labeled according to their HEX code or sRGB codes. Talk to you developer about what colour mode they prefer. If you are looking for the HEX codes of UBC's brand colours, download [the colour codes](http://assets.brand.ubc.ca/downloads/ubc_colour_guide.pdf) from the UBC Brand Site.
 
-![Color Swatches](/images/color-swatches.jpg)
+* [ ] The different **color state** of some elements (like buttons, links, inputs...) are defined and work in the contexts of a light or dark background and with a light or a dark text.
 
-* [ ] The different **color state** of some elements (like buttons, links, inputs...) are defined and worked in the context of a light or dark background and with a light or a dark text.
-
-* [ ] All or the most important/used **colors are accessible** in the design to allow a fluid navigation on the website/webapp.
+* [ ] Ensure that your **color combinations meet accessibility standards**. It is likely that some of your website users will have a vision limitation, so it is important that colours help their ability to read a site. Check all your text colours early in the process to avoid having to change your design later on to accommodate vision issues. Use the links below.
 
 __Additional Resources:__
 * 🛠 [WCAG - Contrast Checker](https://contrastchecker.com/)
@@ -114,9 +113,18 @@ __Additional Resources:__
 
 ![Fonts](/images/fonts.png)
 
-Fonts are an essential part of every design, they shouldn’t be chosen without discernment. Choosing the wrong font for a project could have financial and legal impacts.
+UBC has a license to use the font Whitney on any ubc.ca websites. To use this webfont, please send a request for the font on [UBC's Brand Site](https://brand.ubc.ca/font-request-form/). Please note that you will need to do this for each unique URL address.
 
-It is recommended to ask your client to buy these fonts to avoid possible future issues and take into consideration the condition of use. Some webfonts are limited in terms of pageviews and can’t be hosted ([Understanding Webfont Licensing Structures](https://aeolidia.com/understanding-webfont-licensing-structures/)).
+UBC has a license for only three weights of Whitney: booke, book italic and semibold.
+
+UBC also allows for the use of Arial and [Open Sans](https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans) on websites. 
+
+ __Resources:__
+  * [Typgoraphy standards for ubc.ca homepage sites](https://www.ubc.ca/typography/)
+
+  * [Typgoraphy standards for sites using the UBC CLF](https://clf.ubc.ca/design-specifications/#typography)
+
+If you are not using one of UBC's webfonts, it is recommended to ask your client to buy these fonts to avoid possible future issues and take into consideration the condition of use. Some webfonts are limited in terms of pageviews and can’t be hosted ([Understanding Webfont Licensing Structures](https://aeolidia.com/understanding-webfont-licensing-structures/)).
 
 * [ ] The fonts for desktop (TTF or OTF in general) and the webfonts, in **WOFF, WOFF2 and TTF format** were provided (in a Zip file or given access to the website where they were bought).
 	> ℹ️ TTF format for desktop is not the same than TTF for Web.
@@ -145,14 +153,20 @@ __Additional Resources:__
 
 ![Links and navigation](/images/links.png)
 
-* [ ] All **links have a default, hover, focus, active and visited state** clearly defined (the Style Guide is the best document to specified these).
+* [ ] All **links and buttons have a default, hover, focus, active and visited state** clearly defined (the Style Guide is the best document to specified these).
 * [ ] Alternate views of all navigation states (hover, active/current page).
 
 ### 1.5 - Images / Icons
 
 ![Images](/images/images.png)
 
-* [ ] A **favicon image** with at least 512px X 512px is provided in PNG format. The generation of all the others Favicons can be easily done with online tools.
+Check with your web developer about whether you need to export images at different sizes for each platform (mobile, tablet, desktop), and if you need to export for retina displays.
+
+Also check with your web developer about proper naming structure for images.
+
+Compress your images before sending them to the developer. You can use a program like [Kraken](https://kraken.io) to reduce your images' files sizes.
+
+* [ ] If developing a new site, provide a **favicon image** with at least 512px X 512px is provided in PNG format. The generation of all the others Favicons can be easily done with online tools.
 
   __Resources:__
   * [Favicon Generator for all platforms: iOS, Android, PC/Mac...](https://realfavicongenerator.net/)
@@ -244,7 +258,7 @@ Sometimes, the creative team needs to add new pages or modules in an existing pr
 
 ![Delivery files](/images/delivery-files.png)
 
-* [ ] For all websites, the web designer needs to provide at least **2 PSD** (mobile, desktop and eventually tablet) or at least **1 Sketch file** which needs to be delivered with the dimension below (if you have Photoshop CC 2015 and above, I recommend using artboards).
+* [ ] For all websites, the web designer needs to provide at least **2 PSD or AI** (mobile, desktop and eventually tablet) or at least **1 Sketch file** which needs to be delivered with the dimension below (if you have Photoshop CC 2015 and above, I recommend using artboards).
 
 	> ℹ️ Some web designers could eventually create multiple PSD corresponding to each components used and import them in a single PSD as “smart layer”. In that case, you’ll have multiple PSD linked to one or two files. In the case of Sketch, since the **libraries** exist since version 47, it is possible to link multiples files with symbols ……..
 
@@ -269,9 +283,9 @@ __Additional Resources:__
 
 Before starting the analysis and the pre-work phases and after receiving the creative files, you need to check some important elements:
 
-* __*Which version of Photoshop, Sketch is used?*__
-  Some features are specific to some versions of Photoshop or Sketch. It is important to flag any issue regarding this as soon as possible.
-* __*Is the width of each PSD or artboard correct?*__
+* __*Which version of Photoshop, Illustrator or Sketch is used?*__
+  Some features are specific to some versions of Illustrator, Photoshop or Sketch. It is important to flag any issue regarding this as soon as possible.
+* __*Is the width of each file correct?*__
   In case some space is added on each side of the design, check the exact width of the website.
 * __*Are the creatives using too much “box-shadow”, “linear or radial gradient”…?*__
   Don’t forget the .... Effect which can have impacts on the browser painting performance.
@@ -283,8 +297,6 @@ Before starting the analysis and the pre-work phases and after receiving the cre
 ### 2.1 - Paper analysis
 
 ![Paper Analysis](/images/analysis.png)
-
-It is recommended **printing** some (or all) of the pages you have on an A3 format (or A4 if you don’t have this format). Because of the height of the page. you’ll probably need to print some designs on multiple pages.
 
 I can’t imagine a better way to start than analysing creatives on a paper with a pencil (or different colourful pencils chosen to highlight different type of information).
 
@@ -314,13 +326,13 @@ __Additional Resources:__
 
 ## 3. - Validation
 
-The validation phase is when everything seems to be ready to be integrated. The client, in general, validate the creatives without waiting for any approval from the technical team. As exposed in the Design Checklist, it is essential that developers ensure the quality of the delivery before starting to code.
+The validation phase is when everything seems to be ready to be integrated. The client, in general, validate the creatives without waiting for any approval from the technical team. It is essential that developers ensure the quality of the delivery before starting to code.
 
 ## 4. - Development phase
 
 * [ ] All **medias can be cut and saved** before starting the development phase. That can help you to avoid back and forth between your creative software and your code editor.
 
-* [ ] **The image folder has a clear architecture** where you  arranged the layout's images. It is important to stay consistent between projects in general. Defining a structure for that folder and a naming convention can be helpful.
+* [ ] **The image folder has a clear architecture** where you arranged the layout's images. It is important to stay consistent between projects in general. Defining a structure for that folder and a naming convention can be helpful.
 
 
   You can find an example of a possible structure with prefixes used to recognise each image appurtenance.
@@ -344,12 +356,6 @@ Before launching your website, be sure to review all your pages using the [Front
 
 ---
 
-## Translations
-
-The Front-End Checklist is also available in other languages. Thanks for all translators and their awesome work!
-
-* 🇨🇳 Chinese: [JohnsenZhou/Front-End-Design-Checklist](https://github.com/JohnsenZhou/Front-End-Design-Checklist)
-* 🇪🇸 Spanish: [eoasakura/Front-End-Design-Checklist](https://github.com/eoasakura/Front-End-Design-Checklist)
 
 ## Support
 
